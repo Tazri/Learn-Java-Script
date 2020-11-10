@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background: black;
+    color: white;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#title{
+    color:crimson;
+    padding: 10px;
+}
+
+.aboutMe{
+    width: 90%;
+    margin: 30px;
+    border: 1px solid #222;
+    padding: 20px 20px;
+    transform: scale(1);
+    transition: all 0.3s linear;
+}
+
+h3{
+    color: crimson;
+    margin: 0px 0px 10px 0px;
+}
+
+p{
+    color: tan;
+    padding: 10px 0px;
+}
+
+h4{
+    margin: 10px 0px;
+    padding: 5px;
+    width: 30%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all 1s;
+}
+
+#html{
+    color: yellow;
+    background: linear-gradient(to right,green,yellow);
+}
+
+#css{
+    color: blue;
+    background: linear-gradient(to right,violet,blue);
+}
+
+#JavaScript{
+    color: red;
+    background: linear-gradient(to right,orange,crimson);
+}
+
+.aboutMe:hover{
+    transform: scale(1.02);
+    box-shadow: 2px 2px 0px #111;
+}
+
+#html:hover{
+    width: 85%;
+}
+
+#css:hover{
+    width: 80%;
+}
+#JavaScript:hover{
+    width: 70%;
+}
+@media screen and (max-width:1500px){
+    h4{
+        width: 14%;
+    }
+}
+@media screen and (max-width:1000px){
+    h4{
+        width: 18%;
+    }
+}
+@media screen and (max-width:900px){
+    h4{
+        width: 17%;
+    }
+}
+
+@media screen and (max-width:700px){
+    h4{
+        width: 22%;
+    }
+}
+
+@media screen and (max-width:500px){
+    h4{
+        width: 50%;
+    }
+}

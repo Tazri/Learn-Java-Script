@@ -1,0 +1,12 @@
+/*data type in java script
+primitive data type
+number
+string
+boolean
+null
+undefined
+object data type
+array 
+object
+function
+*/
