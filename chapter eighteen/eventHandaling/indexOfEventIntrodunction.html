@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EvenHandaling</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        .box{
+            width: 30%;
+            height: 300px;
+            background: rgba(220, 20, 60, 0.4)
+        }
+    </style>
+</head>
+<body>
+    <div class="container bg-primary text-white my2">
+        <h1>Event Handaling</h1>
+    </div>
+
+
+    <div class="container my-5 text-center">
+        <h1 class="text-primary">Number List</h1>
+        <ul class="list-group" id="list-group">
+            <li class="list-group-item border border-primary text-primary text-center">1</li>
+            <li class="list-group-item border border-primary text-primary text-center">2</li>
+            <li class="list-group-item border border-primary text-primary text-center">3</li>
+            <li class="list-group-item border border-primary text-primary text-center">4</li>
+        </ul>
+        <button class="btn btn-primary mx-5 my-3" id='add-btn'>Add Number</button>
+        <button class="btn btn-success my-3" id='delete-btn'>Delete Number</button>
+    </div>
+
+    <div class="contaner my-3 border border-success text-center">    
+        <h4 class="text-primary display-5">X = <span id="value-x">0</span></h4>
+        <h4 class="text-primary display-5">Y = <span id="value-y">0</span></h4>
+        <h4 class="text-primary display-5">X-Offset = <span id="value-offset-x">0</span></h4>
+        <h4 class="text-primary display-5">Y-Offset = <span id="value-offset-y">0</span></h4>
+    </div>
+
+
+    <div class="container box my-5 border border-primary" id='box'>
+
+    </div>
+
+
+    <ul id='test'>
+
+    </ul>
+
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="eventInjavaScript.js"></script>
+</body>
+</html>
