@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Form</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+    <div class="container-fluid bg-dark">
+        <div class="container bg-dark text-center">
+            <h1 class="display-5 text-white">User Form</h1>
+        </div>
+        <!--Form-->
+        <form class="container text-white py-5" id="form">
+            <label><strong>Please fill the form</strong></label>
+            <!--Name-->
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name" class="form-control">
+            </div>
+            <!--End Name-->
+
+            <!--Email-->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@site.com" class="form-control">
+            </div>
+            <!--End Email-->
+
+            <!--Password-->
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="password" class="form-control">
+            </div>
+            <!--End Password-->
+
+            <!--Select Option-->
+            <div class="form-group">
+                <label for="programmig">Programming:</label>
+                <select name="programming" id="programming">
+                    <option value="C">C</option>
+                    <option value="Python">Python</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Java">Java</option>
+                    <option value="TypeScript">TypeScript</option>
+                </select>
+            </div>
+            <!--End Select Option-->
+
+            <!--Sumbit Button-->
+            <input type="submit" class="btn btn-primary " value="submit">
+        </form>
+    </div>
+
+    <script src="userForm.js"></script>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
