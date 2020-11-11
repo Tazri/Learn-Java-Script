@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        h3{
+            margin: 0;
+        }
+        .skill-item{
+            display : inline-block;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container bg-primary text-white">
+        <h1 class="display-5 my-2">Add Name Form</h1>
+    </div>
+
+    <div class="container bg-light my-5" id="name-contaner">
+        <!--Name Box-->
+        <h3 class="bg-primary text-center">Name List</h3>
+        <ul class="list-group my-0 text-center" id="list-group">
+        </ul>
+        <label for="name" class="mt-5">Name:</label>
+        <input type="text" name="name" id='name' class="form-control" placeholder="Type Name">
+        <button class="btn btn-primary my-2" id="add-btn">Add Name</button>
+        
+        <!--Check Box-->        
+        <h3 class="text-primary my-2">Skills:</h3>    
+        <div class="check-group my-1">
+            <div class="form-check"><input type="checkbox" value="Html" name="skills" id="check-html" class="form-check-input"><label for="check-html">Html</label></div>
+            <div class="form-check"><input type="checkbox" value="Css" name="skills" id="check-css" class="form-check-input"><label for="check-css">Css</label></div>
+            <div class="form-check"><input type="checkbox" value="JavaScript" name="skills" id="check-JavaScript" class="form-check-input"><label for="check-JavaScript">JavaScript</label></div>
+            <div class="form-check"><input type="checkbox" value="Node.js" name="skills" id="check-node.js" class="form-check-input"><label for="check-node.js">Node.js</label></div>
+            <div class="form-check"><input type="checkbox" value="Python" name="skills" id="check-python" class="form-check-input"><label for="check-python">Python</label></div>
+            <div class="form-check"><input type="checkbox" value="React" name="skills" id="check-react" class="form-check-input"><label for="check-react">React</label></div>
+            <div class="form-check"><input type="checkbox" value="Bootstrap" name="skills" id="check-bootstrap" class="form-check-input"><label for="check-bootstrap">Bootstrap</label></div>
+        </div>
+        <!--Check Result-->
+        <h4 class="text-primary my-2">Skills:</h4>
+        <div class="container-fluid border border-primary my-2 py-2" id='show-skills'>
+        </div>
+    </div>
+
+
+    <script src="form.js"></script>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

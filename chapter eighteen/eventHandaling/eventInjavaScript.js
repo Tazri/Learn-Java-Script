@@ -9,8 +9,9 @@ let addBtn = document.getElementById('add-btn');
 // })
 
 
+//Bellow Code For Add List Item
 
-
+//Function For Add Button
 let counter = 5;
 
 addBtn.addEventListener('click',function(event){
@@ -29,16 +30,38 @@ addBtn.addEventListener('click',function(event){
         listGroup.appendChild(listItem);
     }
 })
+//End Code For Delete Button
 
+//Function For Delete Buttton
 let deleteBtn = document.getElementById('delete-btn');
 
 deleteBtn.addEventListener('click',function(event){
     document.getElementById('list-group').lastElementChild.remove();
     counter--;
 })
+//End Code For Delete Button
+
+//Event Delegation
+// let listGroup = document.getElementById('list-group');
+// [...listGroup.children].forEach(listItem=>{
+//     listItem.addEventListener('click',function(event){
+//         listItem.remove();
+//     })
+// })
+//End Delegation Code
+
+//Sulotion For Event Delegation
+let listGroup = document.getElementById('list-group');
+listGroup.addEventListener('click',function(event){
+    if(this.contains(event.target)){
+        event.target.remove();
+    }
+})
 
 
+//End Code for Add List Item And Delete List Item
 
+//Below code for box
 let box = document.getElementById('box');
 
 box.addEventListener('mousemove',function(event){
@@ -50,7 +73,7 @@ box.addEventListener('mousemove',function(event){
         alert('Now This is 100 and 100');
     }
 })
-
+//End Code For Box
 
 //for test 
 
