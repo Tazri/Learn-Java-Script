@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ajax Post Request</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid bg-primary text-center text-light py-2">
+        <h1>Ajax Post Request</h1>
+    </div>
+
+    <div class="container my-4 bg-light">
+        <form action="post" id="post-form">
+            <div class="form-group">
+                <label for="userNumber">User Number</label>
+                <input type="text" name="userNumber" id="userNumber" class="form-control" placeholder="User Number">
+            </div>
+
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title" class="form-control" placeholder="Title">
+            </div>
+            
+            <div class="form-group">
+                <label for="body">Please Provide A Discription</label>
+                <textarea name="body" id="body" class="form-control" cols="30" rows="10"></textarea>
+            </div>
+            <input type="submit" value="Submit" class="btn btn-primary my-2">
+        </form>
+    </div>
+
+    <div class="my-3 container text-center bg-primary text-light">
+        <h1>Posts</h1>
+        <ul class="my-4 text-center py-3 list-group" id="posts">
+        </ul>
+    </div>
+
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="ajaxPostRequest.js"></script>
+</body>
+</html>
